@@ -8,61 +8,136 @@
     <title>Document</title>
 </head>
 <body>
+    <img src="./images/noise.svg" class="noise" alt="">
+    <img src="./images/shape.svg" class="shape" alt="">
+    <div id="top"></div>
     <div id="universe"></div>
+
+
     <header class="fix-width">
-        <div class="style hover-box">
+        <div class="style hover-box lang-section" data-lang="en">
             <a class="btn" href="">HOME</a>
             <a class="btn" href="">ABOUT</a>
             <a class="btn" href="">PROJECTS</a>
-            <a class="btn" href="">CONTACT</a>
+            <a class="btn" href="#edu">CONTACT</a>
         </div>
+        <div class="style hover-box lang-section" data-lang="fa" style="display:none;">
+            <a class="btn" href="">خانه</a>
+            <a class="btn" href="">درباره</a>
+            <a class="btn" href="">پروژه‌ها</a>
+            <a class="btn" href="#edu">تماس با ما</a>
+        </div>
+
+        <div class="style hover-box lang-section" data-lang="de" style="display:none;">
+            <a class="btn" href="">STARTSEITE</a>
+            <a class="btn" href="">ÜBER UNS</a>
+            <a class="btn" href="">PROJEKTE</a>
+            <a class="btn" href="#edu">KONTAKT</a>
+        </div>
+
         <div class="toggles">
             <button class="style btn-effect" id="themeToggle">
                 <i class="ri-contrast-2-line ri-2x"></i>
             </button>
             <button class="style btn-effect" id="langToggle">
                 <i class="ri-global-line ri-2x"></i>
+                <span id="langLabel">EN</span>
             </button>
         </div>
     </header>
-    <div class="fix-width intro">
+
+
+    <div class="fix-width intro lang-section" data-lang="en" style="display:flex;">   
         <div class="info">
             <div class="text">
                 <p>Open to work <span class="dot"></span></p>
                 <h1 class="name">Hi, I'm <span>Amir Shygun</span></h1>
-
                 <p>Frontend Developer by day & Data Engineer by night.
-                    I enjoy tweaking numbers, be it margins and paddings or machine learning hyper-parameters.
+                I enjoy tweaking numbers, be it margins and paddings or machine learning hyper-parameters.
                 </p>
                 <a href="https://www.google.com/search?q=rasht+gilan" target="_blank">
-                    Based in Iran, Rasht <i class="ri-global-line "></i>
+                    Based in Iran, Rasht <i class="ri-global-line"></i>
                 </a>
             </div>
             <div class="socials">
-                <a href="" class="style btn-effect"><i class="ri-file-download-line ri-xl"></i> Resume</a>
+                <a href="./resume/resume_en.jpg" target="_blank" download="Amir_Shygun_Resume_en.pdf" class="style btn-effect resume"><i class="ri-file-download-fill ri-xl"></i> Resume</a>
                 <a href="" class=""><i class="ri-linkedin-box-fill ri-xl"></i> <span>LinkedIn</span></a>
                 <a href="" class=""><i class="ri-github-fill ri-xl"></i> <span>Github</span></a>                
                 <a href="" class=""><i class="ri-mail-fill ri-xl"></i> <span>Email</span></a>
                 <a href="" class=""><i class="ri-telegram-2-line ri-xl"></i> <span>Telegram</span></a>
             </div>
-            
         </div>
         <div class="image">
             <img src="./images/profile.jpg" alt="Profile Picture">
         </div>
     </div>
-    <h2 class="fix-width b-line">Activities</h2>
-    <div class="fix-width activities">
+    <div class="fix-width intro lang-section" data-lang="fa" style="display:none;">   
+        <div class="info">
+            <div class="text">
+                <p>آماده به کار <span class="dot"></span></p>
+                <h1 class="name">سلام، من<br>
+                    <span>امیر شایگان</span> هستم</h1>
+                <p>توسعه‌دهنده فرانت‌اند در طول روز و مهندس داده در طول شب.
+                من از تنظیم اعداد لذت می‌برم، چه حاشیه‌ها و فاصله‌ها باشد چه ابرپارامترهای یادگیری ماشین.
+                </p>
+                <a href="https://www.google.com/search?q=rasht+gilan" target="_blank">
+                    ساکن ایران، رشت <i class="ri-global-line"></i>
+                </a>
+            </div>
+            <div class="socials">
+                <a href="./resume/resume_fa.jpg" target="_blank" download="Amir_Shygun_Resume_fa.pdf" class="style btn-effect resume"><i class="ri-file-download-fill ri-xl"></i> رزومه</a>
+                <a href="" class=""><i class="ri-linkedin-box-fill ri-xl"></i> <span>لینکدین</span></a>
+                <a href="" class=""><i class="ri-github-fill ri-xl"></i> <span>گیت‌هاب</span></a>                
+                <a href="" class=""><i class="ri-mail-fill ri-xl"></i> <span>ایمیل</span></a>
+                <a href="" class=""><i class="ri-telegram-2-line ri-xl"></i> <span>تلگرام</span></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./images/profile.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <div class="fix-width intro lang-section" data-lang="de" style="display:none;">   
+        <div class="info">
+            <div class="text">
+                <p>Offen für Arbeit <span class="dot"></span></p>
+                <h1 class="name">Hallo,<br>ich bin <span>Amir Shygun</span></h1>
+                <p>Frontend-Entwickler tagsüber & Dateningenieur nachts.
+                Ich genieße es, Zahlen zu optimieren, sei es Margins und Padding oder Machine-Learning-Hyperparameter.
+                </p>
+                <a href="https://www.google.com/search?q=rasht+gilan" target="_blank">
+                    Ansässig in Iran, Rasht <i class="ri-global-line"></i>
+                </a>
+            </div>
+            <div class="socials">
+                <a href="./resume/resume_de.jpg" target="_blank" download="Amir_Shygun_Resume_de.pdf" class="style btn-effect resume"><i class="ri-file-download-fill ri-xl"></i> Lebenslauf</a>
+                <a href="" class=""><i class="ri-linkedin-box-fill ri-xl"></i> <span>LinkedIn</span></a>
+                <a href="" class=""><i class="ri-github-fill ri-xl"></i> <span>Github</span></a>                
+                <a href="" class=""><i class="ri-mail-fill ri-xl"></i> <span>Email</span></a>
+                <a href="" class=""><i class="ri-telegram-2-line ri-xl"></i> <span>Telegram</span></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./images/profile.jpg" alt="Profile Picture">
+        </div>
+    </div>
+
+
+    <h2 class="fix-width b-line lang-section" data-lang="en" style="display:flex;">Activities</h2>
+    <h2 class="fix-width b-line lang-section" data-lang="fa" style="display:none;">فعالیت‌ها</h2>
+    <h2 class="fix-width b-line lang-section" data-lang="de" style="display:none;">Aktivitäten</h2>
+
+
+    <div class="fix-width activities lang-section" data-lang="en">
         <div class="web">
             <section class="text style">
                 <img src="./images/web.webp">
-                <h1>Web<br>Designer</h1>
+                <h1>Web Development</h1>
                 <br>
                 <p>
-                    <br>2 Years of experience building responsive web applications.<br><br>
-                    Interested in 
-                    <a href="https://www.google.com/search?q=Glassmorphism" target="_blank"><strong>Glassmorphism</strong></a>, 
-                    <a href="https://www.google.com/search?q=Neobrutalism" target="_blank"><strong>Neobrutalism</strong></a>, and 
+                    2 Years of experience building responsive web applications.<br><br>
+                    Interested in <br> 
+                    <a href="https://www.google.com/search?q=Glassmorphism" target="_blank"><strong>Glassmorphism</strong></a><br>
+                    <a href="https://www.google.com/search?q=Neobrutalism" target="_blank"><strong>Neobrutalism</strong></a><br>
                     <a href="https://www.google.com/search?q=Skewmorphism" target="_blank"><strong>Skewmorphism</strong></a>
                 </p>
             </section>
@@ -76,67 +151,224 @@
             <section class="text style">
                 <img src="./images/data.jpg" alt="">
 
-                <h1>Data<br>Engineer</h1>
+                <h1>Data Sciences</h1>
                 <br>
                 <p>
-                    <br>EDA, Modeling, and Deployment for real world usecases.<br><br>
-                    Interested in <a href="https://www.google.com/search?q=Data+Visualization" target="_blank"><strong>Data Visualization</strong></a>, and
-                    <a href="https://www.google.com/search?q=Recommender+Systems" target="_blank"><strong>Recommender Systems</strong></a>. 
+                    EDA, Modeling, and Deployment for real world usecases.<br><br>
+                    Interested in <br>
+                    <a href="https://www.google.com/search?q=Data+Visualization" target="_blank"><strong>Data Visualization</strong></a> <br>
+                    <a href="https://www.google.com/search?q=Recommender+Systems" target="_blank"><strong>Recommender Systems</strong></a>
+                    <a href="https://www.google.com/search?q=Model+Training" target="_blank"><strong>Model Training</strong></a>
                 </p>
             </section>
         </div>
             
     </div>
-    <h2 class="fix-width a-line">Education</h2>
-    <!-- <div class="educations fix-width">
+    <div class="fix-width activities lang-section" data-lang="de">
+        <div class="web">
+            <section class="text style">
+            <img src="./images/web.webp">
+            <h1>Webentwicklung</h1>
+            <br>
+            <p>
+                2 Jahre Erfahrung im Aufbau von responsiven Webanwendungen.<br><br>
+                Interessiert an <br> 
+                <a href="https://www.google.com/search?q=Glassmorphism" target="_blank"><strong>Glassmorphism</strong></a><br>
+                <a href="https://www.google.com/search?q=Neobrutalism" target="_blank"><strong>Neobrutalismus</strong></a><br>
+                <a href="https://www.google.com/search?q=Skewmorphism" target="_blank"><strong>Skewmorphism</strong></a>
+            </p>
+            </section>
+            <section class="frame"></section>
+        </div>
+        <div class="data">
+            <section class="frame"></section>
+            <section class="text style">
+            <img src="./images/data.jpg" alt="">
+            <h1>Datenwissenschaft</h1>
+            <br>
+            <p>
+                EDA, Modellierung und Deployment für reale Anwendungsfälle.<br><br>
+                Interessiert an <br>
+                <a href="https://www.google.com/search?q=Data+Visualization" target="_blank"><strong>Datenvisualisierung</strong></a> <br>
+                <a href="https://www.google.com/search?q=Recommender+Systems" target="_blank"><strong>Empfehlungssysteme</strong></a> <br>
+                <a href="https://www.google.com/search?q=Model+Training" target="_blank"><strong>Modelltraining</strong></a>
+            </p>
+            </section>
+        </div>
+    </div>
+    <div class="fix-width activities lang-section" data-lang="fa">
+        <div class="web">
+            <section class="text style">
+            <img src="./images/web.webp">
+            <h1>توسعه وب</h1>
+            <br>
+            <p>
+                ۲ سال تجربه در ساخت اپلیکیشن‌های وب پاسخگو.<br><br>
+                علاقه‌مند به <br> 
+                <a href="https://www.google.com/search?q=Glassmorphism" target="_blank"><strong>گلس‌مرفیسم</strong></a><br>
+                <a href="https://www.google.com/search?q=Neobrutalism" target="_blank"><strong>نیوبراتالیسم</strong></a><br>
+                <a href="https://www.google.com/search?q=Skewmorphism" target="_blank"><strong>اسکیومورفیسم</strong></a>
+            </p>
+            </section>
+            <section class="frame"></section>
+        </div>
 
-        <h2 class="a-line">Educations</h2>
+        <div class="data">
+            <section class="frame"></section>
+            <section class="text style">
+            <img src="./images/data.jpg" alt="">
+            <h1>علوم داده</h1>
+            <br>
+            <p>
+                تحلیل اکتشافی داده، مدل‌سازی و پیاده‌سازی برای مسائل واقعی.<br><br>
+                علاقه‌مند به <br>
+                <a href="https://www.google.com/search?q=Data+Visualization" target="_blank"><strong>بصری‌سازی داده‌ها</strong></a> <br>
+                <a href="https://www.google.com/search?q=Recommender+Systems" target="_blank"><strong>سیستم‌های پیشنهاددهنده</strong></a> <br>
+                <a href="https://www.google.com/search?q=Model+Training" target="_blank"><strong>آموزش مدل</strong></a>
+            </p>
+            </section>
+        </div>
+    </div>
 
+    <h2 class="fix-width a-line lang-section" data-lang="en" id="edu">Education</h2>
+    <h2 class="fix-width a-line lang-section" data-lang="de" id="edu">Bildung</h2>
+    <h2 class="fix-width a-line lang-section" data-lang="fa" id="edu">تحصیلات</h2>
+
+
+
+    <div class="fix-width educations lang-section" data-lang="en">
         <div class="edu">
-            <section class="style">
-                <h3>Computer Engineering</h3>
-                <div>
-                    <p>Bachelor's Degree</p>
-                    <p>Azad University of Gilan</p>
-                    <p>2020-2025</p>
-                </div>
+            <section class="uni">
+                <div><h2>CE Major</h2><i class="ri-school-fill ri-2x"></i></div>
+                <div><h2>Degree</h2><p>Bachelor's Degree</p></div>
+                <div><h2>Institute</h2><p>Azad University of Gilan</p></div>
+                <div><h2>Duration</h2><p>2020-2025</p></div>
             </section>
-            <section class="style">
-                <h3>Language Proficiency</h3>
-                <div>
-                    <p>English - Professional Proficiency</p>
-                    <p>German - Intermediate</p>
-                    <p>Persian - Native</p>
-                </div>
+            <section class="lng">
+                <div><h2>Languages</h2><i class="ri-translate-2 ri-2x"></i></div>
+                <div><h2>English</h2><p>Professional Proficiency</p></div>
+                <div><h2>German</h2><p>Intermediate</p></div>
+                <div><h2>Persian</h2><p>Native</p></div>
             </section>
         </div>
 
-        <div class="cert-container">
-            <div class="cert">
-                <div class="style">
-                    <h3>Advanced Python Programming</h3>
-                    <h4>Quera</h4>
-                    <p>July 2022 - score 90</p>
-                    <p>Practi</p>
-                    <p>Hover for Cert.</p>
-                </div>
-                <div class="style">
-                    <p>Advanced Python Programming</p>
-                    <p>Quera - July 2022</p>
-                    <p>score - 90</p>
-                    <p>link > <a href="#">View Certificate</a></p>
-                </div>
-                <div class="style">
-                    <p>Data Science Professional Certificate</p>
-                    <p>IBM - July 2022</p>
-                    <p>score - 85</p>
-                    <p>link > <a href="#">View Certificate</a></p>
-                </div>
-            </div>
+        <div class="certs-toggle style">
+            <button class="slider-btn style btn-effect">Slider</button>
+            <button class="list-btn style btn-effect">List</button>
         </div>
-    </div> -->
+
+        <div class="certs-list">
+
+        </div>
+
+        <div class="certs-slider">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+    <div class="fix-width educations lang-section" data-lang="de">
+        <div class="edu">
+            <section class="uni">
+                <div><h2>CE Major</h2><i class="ri-school-fill ri-2x"></i></div>
+                <div><h2>Abschluss</h2><p>Bachelor-Abschluss</p></div>
+                <div><h2>Institut</h2><p>Azad Universität von Gilan</p></div>
+                <div><h2>Dauer</h2><p>2020-2025</p></div>
+            </section>
+            <section class="lng">
+                <div><h2>Sprachen</h2><i class="ri-translate-2 ri-2x"></i></div>
+                <div><h2>Englisch</h2><p>Berufliche Kenntnisse</p></div>
+                <div><h2>Deutsch</h2><p>Mittelstufe</p></div>
+                <div><h2>Persisch</h2><p>Muttersprache</p></div>
+            </section>
+        </div>
+        <div class="certs-toggle style">
+            <button class="slider-btn style btn-effect">Schieberegler</button>
+            <button class="list-btn style btn-effect">Liste</button>
+        </div>
 
+        <div class="certs-list">
+
+        </div>
+
+        <div class="certs-slider">
+        </div>
+    </div>
+
+    <div class="fix-width educations lang-section" data-lang="fa">
+        <div class="edu">
+            <section class="uni">
+                <div><h2>رشته مهندسی کامپیوتر</h2><i class="ri-school-fill ri-2x"></i></div>
+                <div><h2>مدرک</h2><p>کارشناسی</p></div>
+                <div><h2>موسسه</h2><p>دانشگاه آزاد گیلان</p></div>
+                <div><h2>مدت زمان</h2><p>۲۰۲۰-۲۰۲۵</p></div>
+            </section>
+            <section class="lng">
+                <div><h2>زبان‌ها</h2><i class="ri-translate-2 ri-2x"></i></div>
+                <div><h2>انگلیسی</h2><p>حرفه‌ای</p></div>
+                <div><h2>آلمانی</h2><p>متوسط</p></div>
+                <div><h2>فارسی</h2><p>زبان مادری</p></div>
+            </section>
+        </div>
+        <div class="certs-toggle style">
+            <button class="slider-btn style btn-effect">اسلایدر</button>
+            <button class="list-btn style btn-effect">لیست</button>
+        </div>
+
+        <div class="certs-list">
+
+        </div>
+
+        <div class="certs-slider">
+        </div>
+    </div>
+
+
+    <h2 class="fix-width b-line"></h2>
+
+
+    <footer class="fix-width lang-section" data-lang="en">
+        <div>
+            © 2025 Amir Shygun | All rights reserved.
+        </div>
+        <div>
+            <a class="style btn-effect go-top" ><i class="ri-arrow-up-line"></i></a>
+        </div>
+    </footer>
+    <footer class="fix-width lang-section" data-lang="de">
+        <div>
+            © 2025 Amir Shygun | Alle Rechte vorbehalten.
+        </div>
+        <div>
+            <a  class="style btn-effect go-top"><i class="ri-arrow-up-line"></i></a>
+        </div>
+    </footer>
+    <footer class="fix-width lang-section" data-lang="fa">
+        <div>
+            © ۲۰۲۵ امیر شایگان | کلیه حقوق محفوظ است.
+        </div>
+        <div>
+            <a class="style btn-effect go-top"><i class="ri-arrow-up-line"></i></a>
+        </div>
+    </footer>
 
 </body>
 <script src="script.js"></script>
